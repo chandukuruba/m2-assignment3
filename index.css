@@ -1,0 +1,192 @@
+body {
+    height: 100vh;
+    width: 100vw;
+  }
+
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+
+
+  /* Container styles */
+  .countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Inner container styles */
+  .countdown-inner {
+    height: 50%;
+    background: rgba(2, 134, 119, 0.07);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media screen and (max-width:768px){
+    .countdown-inner {
+        flex-direction: column;
+    }
+  }
+
+  /* Image styles */
+  .timer-image {
+    width: 45%;
+    height: auto;
+    z-index: 0;
+    height: 60%;
+    position: relative;
+    left: 20%;
+  }
+
+  @media screen and (max-width:768px){
+    .timer-image {
+        width: 70%;
+        margin-bottom: 20px;
+        height: 35%;
+        left: 15%;
+    }
+  }
+
+
+  /* Logo and sale ends text styles */
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo-image {
+    width: 56px;
+    height: 55px;
+    flex-shrink: 0;
+    margin-right: 20px;
+  }
+
+  .sale-ends-text {
+    color: #54555A;
+    font-family: "DIN Pro";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    /* 50.4px */
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+  }
+
+  /* Countdown timer styles */
+  .countdown-timer {
+    font-size: 40px;
+    margin: 15px 0;
+    position: relative;
+    display: flex;
+  }
+
+  /* Shop now button styles */
+  .shop-now-button {
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 3px;
+    background: #54555A;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 30px;
+  }
+
+@media  screen and (max-width:768px) {
+    .shop-now-button{
+        padding: 10px;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+}
+
+  .timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    justify-self: flex-start;
+  }
+
+  @media screen and (max-width:768px) {
+    .timer-container{
+        width: 100%;
+    }
+    .sale-ends-text{
+        font-size: 1rem;
+    }
+  }
+
+  #days span,
+  #minutes span,
+  #seconds span,
+  #hours span {
+    width: 59.801px;
+    height: 74.748px;
+    flex-shrink: 0;
+    border-radius: 3.737px;
+    border: 2.242px solid #54555A;
+    background: #FFF;
+    font-size: 30px;
+    margin: 10px 5px 5px;
+    padding: 10px;
+  }
+
+  @media screen and (max-width: 768px){
+    #days span,
+  #minutes span,
+  #seconds span,
+  #hours span {
+    font-size: 18px;
+    width: 35px;
+    height: 60px;
+    margin: 0;
+  }
+  }
+
+
+  #days,
+  #minutes,
+  #seconds,
+  #hours {
+    padding: 0px;
+    margin: 0px;
+    display: inline;
+  }
+@media screen and (max-width:768px) {
+    .countdown-inner{
+        height: 70%;
+        width: 100%;
+      }
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container p:last-child{
+    font-family: Questa Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 20px;
+
+}
+
+.shop-now-button:hover{
+    transform: scale(1.1);
+}
