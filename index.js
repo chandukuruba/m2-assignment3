@@ -1,12 +1,13 @@
 // Function to update the countdown
 function updateCountdown(endTime) {
-    const now = new Date().getTime();
+    const now = new Date();
     const timeDifference = endTime - now;
+    const remainingTime=new Date(timeDifference)
+    const days = remainingTime.getDate()
+    const hours = remainingTime.getHours()
+    const minutes = remainingTime.getMinutes()
+    const seconds = remainingTime.getSeconds()
 
-    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
 
     // Update the countdown elements
     // Update the countdown elements
@@ -45,7 +46,7 @@ function updateCountdown(endTime) {
 
 
   // Set the end time for the countdown (replace with your desired end time)
-  const endTime = new Date('January 21, 2024 23:59:59').getTime();
+  const endTime = new Date('January 21, 2024');
 
   // Start the countdown
   updateCountdown(endTime);
